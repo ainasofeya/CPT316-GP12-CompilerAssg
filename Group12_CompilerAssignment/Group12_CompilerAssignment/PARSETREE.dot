@@ -1,0 +1,16 @@
+digraph ParseTree {
+    node [shape=ellipse];
+    Node0 [label="="];
+    Node1 [label="x"];
+    Node0 -> Node1;
+    Node2 [label="+"];
+    Node3 [label="y"];
+    Node2 -> Node3;
+    Node4 [label="*"];
+    Node5 [label="z"];
+    Node4 -> Node5;
+    Node6 [label="z"];
+    Node4 -> Node6;
+    Node2 -> Node4;
+    Node0 -> Node2;
+}
