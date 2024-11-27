@@ -33,7 +33,11 @@ struct Token {
 
 // Define keywords, operators, and punctuations for MiniLang
 const unordered_map<string, TokenType> keywords = {
-     {"int", TokenType::Keyword}  // Defining 'int' as a keyword
+     {"int", TokenType::Keyword}, // Defining 'int' as a keyword
+     {"if", TokenType::Keyword}, // Defining 'if' as a keyword
+     {"else", TokenType::Keyword}, // Defining 'else' as a keyword
+     {"while", TokenType::Keyword}, // Defining 'while' as a keyword
+     {"cout", TokenType::Keyword} // Defining 'cout' as a keyword
 };
 const unordered_map<char, TokenType> operators = {
     {'+', TokenType::Operator}, 
@@ -42,7 +46,12 @@ const unordered_map<char, TokenType> operators = {
 };
 
 const unordered_map<char, TokenType> punctuation = {
-    {';', TokenType::Punctuation}  // Punctuation: semicolon
+    {';', TokenType::Punctuation},  // Punctuation: semicolon
+    {'(', TokenType::Punctuation},  // Punctuation: open parenthesis
+    {')', TokenType::Punctuation}, // Punctuation: close parenthesis
+    {'{', TokenType::Punctuation}, // Punctuation: open curly bracket
+    {'}', TokenType::Punctuation}, // Punctuation: close curly bracket
+    {'<', TokenType::Punctuation}
 };
 
 // Lexer class for tokenizing the source code
