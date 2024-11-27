@@ -37,7 +37,7 @@ const unordered_map<string, TokenType> keywords = {
      {"if", TokenType::Keyword}, // Defining 'if' as a keyword
      {"else", TokenType::Keyword}, // Defining 'else' as a keyword
      {"while", TokenType::Keyword}, // Defining 'while' as a keyword
-     {"cout", TokenType::Keyword} // Defining 'cout' as a keyword
+     {"print", TokenType::Keyword} // Defining 'print' as a keyword
 };
 const unordered_map<char, TokenType> operators = {
     {'+', TokenType::Operator}, 
@@ -50,8 +50,7 @@ const unordered_map<char, TokenType> punctuation = {
     {'(', TokenType::Punctuation},  // Punctuation: open parenthesis
     {')', TokenType::Punctuation}, // Punctuation: close parenthesis
     {'{', TokenType::Punctuation}, // Punctuation: open curly bracket
-    {'}', TokenType::Punctuation}, // Punctuation: close curly bracket
-    {'<', TokenType::Punctuation}
+    {'}', TokenType::Punctuation} // Punctuation: close curly bracket
 };
 
 // Lexer class for tokenizing the source code
